@@ -1,0 +1,359 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-container {
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.banner-left {
+    width: 50%;
+    /* text-align: center; */
+}
+
+.banner-right {
+    width: 50%;
+    text-align: right;
+}
+
+.title {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(205, 205, 205);
+}
+
+.logo {
+    width: 100px;
+}
+
+.profile {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.profile-logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.content-area-cotainer {
+    margin-top: 30px;
+    /* border: 1px solid rgb(247, 18, 18); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left-content {
+    /* border: 1px solid gray; */
+    width: 1000px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart-container {
+    /* border: 1px solid rgb(88, 25, 235); */
+    width: 400px;
+}
+
+.place-img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.palce {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    width: 270px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 5px;
+}
+
+.add-btn {
+    width: 90px;
+    padding: 7px;
+    border: none;
+    background-color: rgb(109, 109, 109);
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    margin-top: 15px;
+}
+
+.cart {
+    width: 100%;
+    box-shadow: 8px 8px 16px gray;
+    position: sticky;
+    text-align: center;
+    padding: 10px;
+}
+
+.cart-icon-container {
+    position: absolute;
+
+}
+
+#menu-cart {
+    border: none !important;
+    width: 30px;
+    box-shadow: none;
+    position: absolute;
+    right: 23px;
+    bottom: 1.5px;
+}
+
+#cart-count {
+    position: relative;
+    right: 44px;
+    z-index: 1;
+    bottom: 15px;
+    color: rgb(235, 17, 17);
+}
+
+.category-btn {
+    padding: 8px;
+    border: none;
+    background-color: rgb(135, 134, 133);
+    color: white;
+    font-size: 15px;
+}
+
+.all-cat-btn {
+    padding: 10px;
+}
+
+li {
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    list-style: numeric;
+
+}
+
+.selected-place-container {
+    width: 200px;
+    margin: auto;
+
+}
+
+.solar-system {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+    animation: spin 10s linear infinite;
+}
+
+.orbit {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit2 {
+    position: absolute;
+    width: 500px;
+    height: 490px;
+    border: 1px solid red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    animation: orbit 10s linear infinite;
+}
+
+.mercury {
+    top: 50%;
+    left: 50%;
+    animation-duration: 4s;
+    animation-name: orbit-mercury;
+}
+
+.venus {
+    top: 50%;
+    left: 50%;
+    animation-duration: 6s;
+    animation-name: orbit-venus;
+}
+
+.earth {
+    top: 50%;
+    left: 50%;
+    animation-duration: 8s;
+    animation-name: orbit-earth;
+}
+
+.mars {
+    top: 50%;
+    left: 50%;
+    animation-duration: 9s;
+    animation-name: orbit-mars;
+}
+
+.jupiter {
+    top: 50%;
+    left: 50%;
+    animation-duration: 12s;
+    animation-name: orbit-jupiter;
+}
+
+.saturn {
+    top: 50%;
+    left: 50%;
+    animation-duration: 14s;
+    animation-name: orbit-saturn;
+}
+
+.uranus {
+    top: 50%;
+    left: 50%;
+    animation-duration: 16s;
+    animation-name: orbit-uranus;
+}
+
+.neptune {
+    top: 50%;
+    left: 50%;
+    animation-duration: 18s;
+    animation-name: orbit-neptune;
+}
+
+@keyframes orbit-mercury {
+    0% {
+        transform: rotate(0deg) translate(75px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(75px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-venus {
+    0% {
+        transform: rotate(0deg) translate(100px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(100px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-earth {
+    0% {
+        transform: rotate(0deg) translate(125px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(125px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-mars {
+    0% {
+        transform: rotate(0deg) translate(150px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(150px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-jupiter {
+    0% {
+        transform: rotate(0deg) translate(175px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(175px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-saturn {
+    0% {
+        transform: rotate(0deg) translate(200px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(200px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-uranus {
+    0% {
+        transform: rotate(0deg) translate(250px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(250px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit-neptune {
+    0% {
+        transform: rotate(0deg) translate(300px, 0px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(300px, 0px) rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
